@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Clínica Palmas</title>
+    <link rel="stylesheet" href="Formuestilo.css">
+    <div class="container">
+</head>
+<body>
+
+    <header>
+        <h1>CLÍNICA PALMAS </h1>
+        <img src="https://i.imgur.com/7jqKLhe.png" alt="Logo da Clínica Palmas" class="logo">
+    
+    </header>
+ <h2>Cadastro:</h2>
+ <br>
+<form action="/action_page.php">
+<label for="nome">Nome Completo:</label>
+<input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required maxlength="100">
+</form>
+
+<label for="idade">Idade:</label>
+<input type="number" id="idade" name="idade" placeholder="Digite sua idade" required min="0" max="120" >
+
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+<p>Escolha o turno da consulta:</p>
+
+<label>
+    <input type="radio" name="turno" value="manhã" required> Manhã
+</label>
+<label>
+    <input type="radio" name="turno" value="tarde"> Tarde
+</label>
+<label>
+    <input type="radio" name="turno" value="noite"> Noite
+</label>
+<br>
+<label for="data-hora">Data e Hora da Consulta:</label>
+<input type="datetime-local" id="data-hora" name="data-hora" required><br>
+<form action="/action_page.php">
+    <br>
+    <label for="arquivo">Anexe um documento (opcional):</label><br>
+    <input type="file" id="myfile" name="myfile"><br><br>
+
+<label>
+    <input type="checkbox" name="termos" required>
+    Aceito os termos e condições
+</label>
+
+<button type="submit">Agendar Consulta</button>
+</form>
+</div>
+</body>
+</html>

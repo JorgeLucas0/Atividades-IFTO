@@ -1,48 +1,68 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
-header {
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
 }
+
+#header h1 {
+    font-size: 2em;
+    text-align: center;
+    flex: 1; 
+}
+
+
+.ballon-img {
+    width: 50px;  
+    height: auto;
+}
+
+#left-img, #right-img {
+    display: flex;
+    justify-content: center;
+}
+
 
 main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#about, #career, #achievements {
+    background-color: white;
     padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
-}
-
-section {
-    margin-bottom: 20px;
-}
 
 ul {
     list-style-type: none;
-    padding: 0;
 }
 
 ul li {
-    background-color: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-footer {
+#footer {
+    text-align: center;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
 }
